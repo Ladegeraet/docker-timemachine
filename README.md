@@ -12,6 +12,11 @@ To download the docker container and execute it, simply run:
 $ docker run -h timemachine --name timemachine --restart=unless-stopped -d -v /external_volume:/timemachine -it -p 548:548 -p 636:636 odarriba/timemachine
 ```
 
+ARM Version:
+```
+$ docker run -h timemachine --name timemachine --restart=unless-stopped -d -v /external_volume:/timemachine -it -p 548:548 -p 636:636 mfresonke/armhf-timemachine
+```
+
 Replace `external_volume` with a local path where you want to store your data.
 
 As the image has been started using the `--restart=always` flag, it will start when the computers boots up.
